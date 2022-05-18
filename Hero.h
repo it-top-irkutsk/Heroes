@@ -29,8 +29,8 @@ public:
         return _health;
     }
 
-    virtual void attack(Hero enemy) {
-        int h = enemy.getHealth() - _damage;
-        enemy.setHealth(h);
+    virtual void attack(Hero* enemy) {
+        int h = enemy->getHealth() - _damage;
+        enemy->setHealth(h);
     }
 };

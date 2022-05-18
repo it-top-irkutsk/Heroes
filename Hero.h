@@ -5,13 +5,13 @@
 using namespace std;
 
 class Hero {
-private:
+protected:
     string _name;
     int _health;
     int _damage;
 
 public:
-    Hero(const string &name, int health, int damage) : _name(name), _health(health), _damage(damage) {}
+    Hero(const string &name) : _name(name) {}
 
     const string &getName() const {
         return _name;

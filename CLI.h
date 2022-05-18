@@ -15,7 +15,8 @@ public:
         cout << endl;
     }
 
-    static void printHero(Hero hero) {
-        cout << "--- name: " << hero.getName() << " ---" << endl;
+    static void printHero(Hero* hero) {
+        cout << "--- name: " << hero->getName();
+        cout << " | " << hero->getHealth() << " ---" << endl;
     }
 };
